@@ -1,0 +1,68 @@
+:root {
+    --primary-color: #3498db;
+    --spacing-unit: 16px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header .navbar {
+    margin-bottom: 20px;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.container h1:hover {
+    color: var(--primary-color);
+}
+
+.card {
+    margin-bottom: var(--spacing-unit);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: var(--spacing-unit);
+}
+
+footer .fa {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer .fa:hover {
+    color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .container h1 {
+        font-size: 1.5rem;
+    }
+}
